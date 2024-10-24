@@ -1,0 +1,31 @@
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+.nav-container ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  font-size: 20px;
+  list-style: none;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.active {
+  background-color: #e5b424;
+  color: white;
+}
+
+.unactive {
+  padding: 10px 50px;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  /* px-4 py-3 rounded-2xl text-xl font-normal */
+}
