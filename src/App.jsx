@@ -41,12 +41,12 @@ function App() {
   return (
     <>
       <div className='w-11/12 mx-auto'>
-      <div className='nav-container my-7'>
+      <div className='flex md:flex-row justify-between items-center my-7'>
         <div>
           <h1 className='text-2xl font-bold'>Sjm Restuarent</h1>
         </div>
-        <div>
-          <ul>
+        <div className='nav-container'>
+          <ul className=''>
           <li>Home</li>
           <li>About</li>
           <li>Contact</li>
@@ -57,7 +57,7 @@ function App() {
           <h1 className='text-2xl font-semibold'>contact</h1>
         </div>
       </div>
-      <div className='flex justify-between'>
+      <div className='flex  lg:flex-row justify-between flex-col'>
           <Products handleAddToCart={handleAddToCart}></Products>
           <Carts  carts={carts}
             handleHideClick={handleHideClick}

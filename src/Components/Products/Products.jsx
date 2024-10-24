@@ -12,9 +12,9 @@ const Products = ({handleAddToCart}) => {
     }, [])
     // console.log(carts);
     return (
-        <div className='w-2/3 border-2 p-3'>
+        <div className='lg:w-2/3 w-full border-2 p-3'>
             <h1 className='text-4xl font-bold'>Product container</h1>
-            <div className='grid grid-cols-2 gap-3 mt-2'>
+            <div className='grid md:grid-cols-2 grid-cols-1 gap-3 mt-2'>
                 {
                 products.map((product,idx)=><Product key={idx} product={product} handleAddToCart={handleAddToCart}></Product>)
               }

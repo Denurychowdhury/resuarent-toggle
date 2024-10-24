@@ -5,7 +5,7 @@ import Cart from '../Cart/Cart';
 
 const Carts = ({ carts,handleHideClick,isActive,handleRemoveToCart,deletecart}) => {
     return (
-        <div className='w-1/3 text-center border-2'>
+        <div className='lg:w-1/3 w-full text-center border-2'>
             <h1 className='text-3xl font-bold'>Cart-container</h1>
             <div className='flex items-center justify-center gap-3 my-3'>
                 <button onClick={() =>handleHideClick('cart')} className={`${isActive.cart?'active unactive':'unactive'}`}>Cart</button>
